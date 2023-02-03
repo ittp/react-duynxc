@@ -24,7 +24,22 @@ for (let i = 0; i < 1; i++) {
   edges.push({ source: id, target: 'center', type: 'can-running' });
 }
 // Add 6 nodes on the right
-for (let i = 0; i < 2; i++) {
+let getData = async() => {
+  let url= '',
+  dataRequest = axios.get(url).then(res=> res.data)
+
+console.log(dataRequest)
+
+if(dataRequest.length >= 1) {
+   console.log(dataRequest)
+} else {
+
+console.log('no data')
+}
+
+console.log('getData')
+}
+for (let i = 0; i < 4; i++) {
   const id = 'right' + i;
   nodes.push({
     id,

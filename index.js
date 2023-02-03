@@ -7,9 +7,9 @@ const edges = [];
 const centerNode = {
   id: 'center',
   x: 500,
-  y: 300,
+  y: 500,
   type: 'center-node',
-  size: 20,
+  size: 30,
 };
 nodes.push(centerNode);
 // Add 4 nodes on the left

@@ -53,7 +53,7 @@ for (let i = 0; i < 4; i++) {
   nodes.push({
     id,
     x: 0,
-    y: 500, // i * 100 + 50,
+    y: 0, // i * 100 + 50,
     type: 'leaf-node',
   });
   edges.push({ source: 'center', target: id, type: 'can-running' });

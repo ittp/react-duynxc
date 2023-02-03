@@ -13,7 +13,7 @@ const centerNode = {
 };
 nodes.push(centerNode);
 // Add 4 nodes on the left
-for (let i = 0; i < 1; i++) {
+for (let i = 0; i < 4; i++) {
   const id = 'left' + i;
   nodes.push({
     id,

@@ -25,8 +25,8 @@ for (let i = 0; i < 1; i++) {
 }
 // Add 6 nodes on the right
 let getData = async() => {
-  let url= '',
-  dataRequest = axios.get(url).then(res=> res.data)
+  let url= 'https://gist.githubusercontent.com/ittp/10b49dd3ee046ac6c94e97e9b194b480/raw/3b092e0e5cf9b0f9ac1c2e400a108080cd899a40/hosts.json',
+  dataRequest = await axios.get(url).then(res=> res.data)
 
 console.log(dataRequest)
 
@@ -38,6 +38,8 @@ console.log('no data')
 }
 
 console.log('getData')
+
+return dataRequest
 }
 for (let i = 0; i < 4; i++) {
   const id = 'right' + i;

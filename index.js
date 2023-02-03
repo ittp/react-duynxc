@@ -41,6 +41,13 @@ console.log('getData')
 
 return dataRequest
 }
+
+
+try {
+getData()
+} catch(err) {
+
+}
 for (let i = 0; i < 4; i++) {
   const id = 'right' + i;
   nodes.push({
